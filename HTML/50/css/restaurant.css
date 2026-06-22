@@ -1,6 +1,7 @@
 h1{
     text-align: center;
     color: rgb(0, 255, 72);
+    margin-bottom: 1px;
 }
 p{
     text-align: center;
@@ -42,7 +43,10 @@ img{
   flood-color: rgb(255, 183, 0);
 
 }
-body.opening{
+body .opening{
     /* font-size: 1.5em; */
     color: rgb(255, 183, 0);
+    max-width: 600px;
+    margin: 0 auto;
+    overflow:auto; 
 }
