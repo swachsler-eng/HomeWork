@@ -3,20 +3,35 @@ h1{
     color: rgb(0, 255, 72);
     margin-bottom: 1px;
 }
-p{
+p,a{
     text-align: center;
     font-size: 1.2em;
 }
 a{
+    font-weight: bold;
     font-size: 1.5em;
+    color: rgb(255, 183, 0);
+}
+a:visited{
+    color: rgb(201, 195, 195);
+}
+a:hover{
+    color: rgb(0, 255, 72);
+}
+a:active{
+    color: rgb(0, 0, 255);
+}
+a:focus{
+    color: rgb(255, 0, 0);
 }
 body{
     text-align: center;
 }
 ol{
+    list-style:disc;
     list-style-position: inside;
     color: red;
-   
+    
 }
 
 div{
@@ -36,7 +51,9 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-   
+}
+.home-img{
+    border:20px solid pink
 }
 #menu{
   font-size: 1.5em;
