@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: rgb(0, 255, 72);
+}
+p{
+    text-align: center;
+    font-size: 1.2em;
+}
+a{
+    font-size: 1.5em;
+}
+body{
+    text-align: center;
+}
+ol{
+    text-align: center;
+}
+div{
+    font-style: italic;
+}
+span{
+    font-weight: bold;
+}
+nav{
+   text-align: center;
+}
+img{
+    border: 20px solid blue;
+    border-radius: 50px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
