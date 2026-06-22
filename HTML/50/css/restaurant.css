@@ -13,10 +13,14 @@ body{
     text-align: center;
 }
 ol{
-    text-align: center;
+    list-style-position: inside;
+    color: red;
+   
 }
+
 div{
     font-style: italic;
+    overflow: hidden;
 }
 span{
     font-weight: bold;
@@ -26,10 +30,19 @@ nav{
 }
 img{
     border: 20px solid blue;
-    border-radius: 50px;
+    border-radius: 100px;
     padding: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
    
+}
+#menu{
+  font-size: 1.5em;
+  flood-color: rgb(255, 183, 0);
+
+}
+body.opening{
+    /* font-size: 1.5em; */
+    color: rgb(255, 183, 0);
 }
