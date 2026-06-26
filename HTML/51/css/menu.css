@@ -1,0 +1,39 @@
+.menu-image:hover {
+    scale: 1.2 1.2
+    
+}
+.menu-text:hover {
+    color: rgb(255, 119, 0);
+}
+.menu-text{
+    text-shadow: 2px 2px 4px rgb(255, 119, 0);
+    clear: left;
+    /* display: inline-block; */
+    /* border-bottom: 2px solid rgb(255, 119, 0); */
+}
+.menu-description{
+  /* display: inline-block; */
+}
+img{
+    float: left;
+    /* display: inline-block; */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* vertical-align: middle; */
+}
+
+nav{
+    clear: left;
+}
+body{
+    /* background-image: url("../backgroundimg.jpg"); */
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin:10px 10px 10px 10px
+}
+html{
+    background-image: url(../images/newrestimg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

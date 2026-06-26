@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+    color: rgb(0, 174, 255);
+    margin-bottom: 1px;
+}
+
+p,
+a {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+a {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(255, 183, 0);
+}
+
+a:visited {
+    color: rgb(201, 195, 195);
+}
+
+a:hover {
+    color: rgb(0, 255, 72);
+    cursor: pointer;
+}
+
+a:active {
+    color: rgb(0, 0, 255);
+}
+
+a:focus {
+    color: rgb(255, 0, 0);
+}
+
+body {
+    text-align: center;
+}
+
+ol {
+    list-style: disc;
+    list-style-position: inside;
+    color: red;
+
+}
+
+div {
+    font-style: italic;
+    overflow: hidden;
+}
+
+span {
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+}
+
+img {
+    border: 20px solid blue;
+    border-radius: 100px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-img {
+    border: 20px solid pink
+}
+
+#menu {
+    font-size: 1.5em;
+    flood-color: rgb(255, 183, 0);
+
+}
+
+body .opening {
+    /* font-size: 1.5em; */
+    color: rgb(255, 183, 0);
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: auto;
+    transform: skew(-20deg);
+}
