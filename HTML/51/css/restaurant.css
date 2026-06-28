@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    color: rgb(0, 174, 255);
+    color: rgb(0, 174, 255, 0.4);
     margin-bottom: 1px;
 }
 
@@ -79,7 +79,7 @@ img {
 
 body .opening {
     /* font-size: 1.5em; */
-    color: rgb(255, 183, 0);
+    color: #FFB700FB;
     max-width: 600px;
     margin: 0 auto;
     overflow: auto;
