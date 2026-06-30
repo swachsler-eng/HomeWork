@@ -1,10 +1,5 @@
-h1 {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    color: rgb(0, 174, 255, 0.4);
-    margin-bottom: 1px;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
 html {
     /* background-color: rgb(66, 60, 60); */
     background: #833AB4;
@@ -13,8 +8,8 @@ html {
 
 p,
 a {
-    text-align: center;
-    font-size: 1.2em;
+    /* text-align: center; */
+    /* font-size: 1.2em; */
 }
 
 a {
@@ -39,9 +34,22 @@ a:active {
 a:focus {
     color: rgb(255, 0, 0);
 }
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(0, 174, 255, 0.8);
+    margin-bottom: 1px;
+    background-color: beige;
+    margin-top: 5px;
+    padding: 10px;
+}
 
 body {
-    text-align: center;
+    /* text-align: center; */
+    margin: 0px;
+    body {
+    max-height: 200vh;
+}
 }
 
 ol {
@@ -53,7 +61,6 @@ ol {
 
 div {
     font-style: italic;
-    overflow: hidden;
 }
 
 span {
@@ -61,9 +68,31 @@ span {
 }
 
 nav {
-    text-align: center;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(31, 102, 209);
+    display: inline-block;
+    border: 2px solid rgb(255, 183, 0);
 }
 
+nav a {
+    text-decoration: none;
+    color: rgb(255, 183, 0);
+    font-size: 1.5em;
+    /* border: 2px solid rgb(255, 183, 0); */
+    background-color: rgb(246, 248, 249);
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(0, 174, 255, 0.8);
+    margin-bottom: 1px;
+    background-color: beige;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Bitcount Ink', monospace;
+}
 img {
     border: 20px solid blue;
     border-radius: 100px;
@@ -91,4 +120,7 @@ body .opening {
     margin: 0 auto;
     overflow: auto;
     transform: skew(-20deg);
+}
+.header {
+    font-size: 1.5em;
 }
