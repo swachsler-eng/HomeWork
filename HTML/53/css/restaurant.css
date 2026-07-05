@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+html {
+    /* background-color: rgb(66, 60, 60); */
+    background: #833AB4;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 87%, rgba(252, 176, 69, 1) 100%);
+}
+
+p,
+a {
+    /* text-align: center; */
+    /* font-size: 1.2em; */
+}
+
+a {
+    font-weight: bold;
+    /* font-size: 1.5em; */
+    color: rgb(255, 183, 0);
+}
+
+a:visited {
+    color: rgb(201, 195, 195);
+}
+
+a:hover {
+    color: rgb(0, 255, 72);
+    cursor: pointer;
+}
+
+a:active {
+    color: rgb(0, 0, 255);
+}
+
+a:focus {
+    color: rgb(255, 0, 0);
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(0, 174, 255, 0.8);
+    margin-bottom: 1px;
+    background-color: beige;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+body {
+    /* text-align: center; */
+    margin: 0px;
+    body {
+    max-height: 200vh;
+}
+}
+
+ol {
+    list-style: disc;
+    list-style-position: inside;
+    color: red;
+
+}
+
+div {
+    font-style: italic;
+}
+
+span {
+    font-weight: bold;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(31, 102, 209);
+    display: inline-block;
+    border: 2px solid rgb(255, 183, 0);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 183, 0);
+    font-size: 1.5em;
+    /* border: 2px solid rgb(255, 183, 0); */
+    background-color: rgb(246, 248, 249);
+}
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: rgb(0, 174, 255, 0.8);
+    margin-bottom: 1px;
+    background-color: beige;
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Bitcount Ink', monospace;
+}
+img {
+    border: 20px solid blue;
+    border-radius: 100px;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* transform: translate(20px, 0px); */
+}
+
+.home-img {
+    border: 20px solid pink
+}
+
+#menu {
+    font-size: 1.5em;
+    flood-color: rgb(255, 183, 0);
+
+}
+
+body .opening {
+    /* font-size: 1.5em; */
+    color: #FFB700FB;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: auto;
+    transform: skew(-20deg);
+}
+.header {
+    font-size: 1.5em;
+}

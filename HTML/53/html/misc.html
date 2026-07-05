@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (width<1200px) {
+            body {
+                background-color: lightcoral;
+            }
+        }
+        @media (width<900px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+        @media(width<600px) {
+            body {
+                background-color: lightgreen;
+            }
+        }
+        nav{
+            font-size: 1.5em;
+        }
+        table {
+            border: 1px solid black;
+            /* border-collapse: collapse; */
+        }
+        th, td {
+            border: 1px solid rgb(100, 200, 0);
+            padding: 5px;
+        }
+        tr:nth-child(even) {
+            background-color: rgb(255, 255, 0);
+        }
+        tr:hover {
+            background-color: rgb(255, 0, 0);
+        }
+        input:not([type=submit]){
+         width: 20%;
+        }
+        td:first-child {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Stuff</h1>
+    <h2>Resize window width to change background color</h2>
+    <nav>
+         <a href="index.html">Home</a>
+        |<a href="menu.html">Menu</a>
+        | <a href="misc.html">Misc</a>
+    </nav>
+ <audio controls src="../audio-video/freesound_community-ice-cream-truck-theme-77464.mp3"></audio>
+ <!-- <video controls src="../audio-video/14.0-59.0.mp4"></video> -->
+ <table>
+    <caption>Table of Random Stuff</caption>
+    <thead>
+      <tr>
+        <th>jan</th>
+        <th>feb</th>
+        <th colspan="2">june</th>
+    </tr>  
+    </thead>
+<tbody>
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td> 
+</tbody>
+</table>
+<h3>enter ur info to be put into a raffle</h3>
+<form>
+    <label>first: 
+    <input type="text" name="first" minlength="3" maxlength="10" required>
+    </label>
+    <label for="password">password: </label>
+        <input type="password" name="password" id="password">
+    <input type="submit" value="enter raffle">
+</form>
+</body>
+</html>

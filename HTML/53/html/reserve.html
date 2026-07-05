@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form action="reserve.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required><br><br>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required><br><br>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required><br><br>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required><br><br>
+
+                    <input type="submit" value="Reserve">
+                </form>
+            </td>
+    </table>
+</body>
+</html>
