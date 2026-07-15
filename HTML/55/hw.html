@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+         display:grid;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-auto-rows:150px;
+            grid-auto-columns:150px; 
+            /* grid-template:
+            '.   head' */
+        }
+        div{
+            border: 1px solid black;
+        }
+        div:nth-child(1){
+           background-color: red;
+           grid-area:1/4/4/5
+        }
+        div:nth-child(2){
+           background-color: blue;
+           grid-area:4/4/5/8;
+        }
+        div:nth-child(3){
+           background-color: green;
+        }
+        div:nth-child(4){
+           background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, consequuntur.</div>
+    <div>Quae nihil aspernatur ea tempore. Alias adipisci vel quibusdam sequi?</div>
+    <div>Accusantium suscipit laboriosam dolorem sit commodi, possimus voluptate error excepturi!</div>
+    <div>Nisi adipisci expedita sapiente reprehenderit ab, saepe a tempore quisquam!</div>
+    <!-- <div>Unde dolorum numquam illo veniam accusamus et aliquid nihil laborum.</div>
+    <div>Tempora quae impedit, sit esse saepe porro laborum quasi veniam.</div>
+    <div>Laborum ullam exercitationem dignissimos nesciunt omnis aperiam mollitia enim amet.</div>
+    <div>Sunt corrupti temporibus fuga natus laudantium corporis libero explicabo doloribus!</div>
+    <div>Laborum ut iusto, natus beatae necessitatibus dolorum facilis explicabo saepe!</div>
+    <div>Debitis velit qui corrupti alias dignissimos veritatis! Nobis, nemo facere.</div> -->
+</body>
+</html>

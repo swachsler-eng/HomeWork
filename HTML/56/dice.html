@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template:
+                '. . .' 1fr
+                '. . . ' 1fr
+                '. . . ' 1fr/
+                max-content max-content max-content
+            ;
+        }
+
+        div {
+            background-color: black;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        section {
+            display: grid;
+            grid-template:
+                'one two three' 15px
+                'four five six' 15px
+                'seven eight nine' 15px/
+                15px 15px 15px;
+            align-items: center;
+            justify-items: center;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        div:nth-child(1) {
+            grid-area: one;
+        }
+
+         div:nth-child(2) {
+            grid-area: two;
+        }
+
+        div:nth-child(3) {
+            grid-area: three;
+        }
+
+        div:nth-child(4) {
+            grid-area: four;
+        }
+
+        div:nth-child(5) {
+            grid-area: five;
+        }
+
+        div:nth-child(6) {
+            grid-area: six;
+        }
+
+        div:nth-child(7) {
+            grid-area: seven;
+        }
+
+        div:nth-child(8) {
+            grid-area: eight;
+        }
+
+        div:nth-child(9) {
+            grid-area: nine;
+        } 
+
+        section:nth-child(1){
+            grid-template-areas: 
+            '. . .'
+            '. one .'
+            '. . .';
+        }
+        section:nth-child(2){
+            grid-template-areas: 
+            '. . one'
+            '. . .'
+            'two . .';
+        }
+        section:nth-child(3){
+            grid-template-areas:
+            'one . .'
+            '. two .'
+            '. . three'
+        }
+        section:nth-child(4){
+            grid-template-areas:
+            'one . two'
+            '. . .'
+            'three . four'
+        }  
+        section:nth-child(5){
+            grid-template-areas:
+            'one . two'
+            '. three .'
+            'four . five'
+        }
+        section:nth-child(6){
+            grid-template-areas:
+            'one . two'
+            'three . four'
+            'five . six'
+        }  
+        section:nth-child(7){
+            grid-template-areas:
+            'one . two'
+            'three four five'
+            'six . seven'
+        }
+        section:nth-child(8){
+            grid-template-areas:
+            'one two three'
+            'four . five'
+            'six seven eight'
+        }
+        </style>
+</head>
+
+<body>
+    <section>
+        <div></div>
+    </section>
+
+    <section><div></div>
+    <div></div></section>
+
+    <section><div></div>
+    <div></div>
+    <div></div></section>
+
+    <section><div></div>
+    <div></div>
+    <div></div>
+    <div></div></section>
+
+    <section><div></div>
+    <div></div>
+    <div></div>
+    <div></div><div></div></section>
+    
+    <section><div></div>
+    <div></div>
+    <div></div>
+    <div></div><div></div>
+    <div></div></section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+
+     <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+     </section>
+</body>
+
+</html>
