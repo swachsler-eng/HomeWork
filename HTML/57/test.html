@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUFF</title>
+    <style>
+        html {
+            --left-margin: 10%;
+        }
+
+        body {
+            font-family: 'helvetica', 'arial', sans-serif;
+            margin: 0em 0em 4em 0em;
+        }
+
+        main {
+            margin: 0 var(--left-margin) 0 var(--left-margin);
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            background-color: black;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+
+        footer {
+            color: white;
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 1em var(--left-margin);
+        }
+
+        ul {
+
+            display: flex;
+            list-style-type: none;
+            gap: 10px;
+            margin-left: var(--left-margin);
+            padding-left: 0;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            margin:0;
+        }
+
+        header {
+            background-color: #dcd8d8;
+            text-align: center;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            scroll-margin-top: 55px;
+        }
+
+        header span {
+            font-style: italic;
+        }
+
+        .products {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            text-align: center;
+            margin:1em 0
+        }
+        #Products{
+            text-align: center;
+        }
+
+        .products p {
+            text-align: justify;
+        }
+
+        img,
+        video {
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        input {
+            box-shadow: 2px 2px 0px black;
+            border-radius: 5px;
+        }
+
+        .form-area {
+            background-color: #dcd8d8;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            scroll-margin-top: 55px;
+        }
+
+        table,
+        th,
+        td {
+            border: black 2px solid;
+
+        }
+
+        thead th {
+            padding: 0px 3px;
+        }
+
+        td,
+        tfoot {
+            text-align: right;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: darkturquoise;
+        }
+
+        table tr:hover {
+            background-color: blue;
+        }
+
+        td:last-child {
+            color: red;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: max-content;
+            margin: 1em auto;
+
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        @media (min-width:800px){
+            .products{
+                flex-direction: row;
+            }
+            .products div:not(:first-child){
+                border-left: 2px solid grey;
+                padding-left: 10px;
+            }
+           
+        }
+        @media(min-width:1000px){
+             label{
+                display:inline-block
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Products">Products</a></li>
+            <li><a href="#Sign-up">Sign Up</a></li>
+            <li><a href="#Financials">Financials</a></li>
+            <li><a href="#About-us">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>estuff</h1>
+            <h2>A <span>PCS</span> company</h2>
+        </header>
+        <h2 id="Products">Products</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eos laborum voluptatibus nemo sit veritatis
+            explicabo dolor? Vitae, autem? </p>
+        <div class="products">
+            <div class="computer">
+                <h2>Computers</h2>
+                <img src="macworld.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, temporibus! Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Incidunt, odit!</p>
+            </div>
+            <div class="choir">
+                <h2>Choirs</h2>
+                <video controls poster="shira.png">
+                    <source src="14.0-59.0.mp4">
+                </video>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, fuga? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Illo, numquam.</p>
+            </div>
+            <div class="candy">
+                <h2>Candy</h2>
+                <img src="candy.png" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, fugiat. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Aspernatur, unde.</p>
+            </div>
+        </div>
+        <div id="Sign-up" class="form-area">
+            <h2>Sign Me Up!</h2>
+            <form action="foo.php" method="post">
+                <label>Name:
+                    <input type="text" placeholder="Your Name" required>
+                </label>
+                <label>Email:
+                    <input type="email" placeholder="Your Email" required>
+                </label>
+                <input type="submit" value="Sign Me Up!">
+            </form>
+        </div>
+        <h2 id="Financials">Financials</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium modi laborum sint fugit labore dolorem.
+            Culpa animi et assumenda est quae. Voluptatum sed non similique?
+        </p>
+        <div class="table-container">
+            <table>
+                <caption>Profits - By Quarter</caption>
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>1st Quarter profits</th>
+                        <th>2nd Quarter profits</th>
+                        <th>3rd Quarter profits</th>
+                        <th>4th Quarter profits</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>2012</th>
+                        <td>$1,000,000</td>
+                        <td>$1,000,000</td>
+                        <td>$1,000,000</td>
+                        <td>$1,000,000</td>
+                        <td>$4,000,000</td>
+                    </tr>
+                    <tr>
+                        <th>2013</th>
+                        <td>$2,000,000</td>
+                        <td>$2,000,000</td>
+                        <td>$2,000,000</td>
+                        <td>$2,000,000</td>
+                        <td>$8,000,000</td>
+                    </tr>
+                    <tr>
+                        <th>2014</th>
+                        <td>$3,000,000</td>
+                        <td>$3,000,000</td>
+                        <td>$3,000,000</td>
+                        <td>$4,000,000</td>
+                        <td>$10,000,000</td>
+                    </tr>
+                    <tr>
+                        <th>2015</th>
+                        <td>$4,000,000</td>
+                        <td>$4,000,000</td>
+                        <td>NA</td>
+                        <td>NA</td>
+                        <td>$12,000,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="5">Total</th>
+                        <td>$40,000,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <h2 id="About-us">About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa laboriosam doloremque atque accusamus libero?
+            Nesciunt odit dolorem velit eos expedita corrupti illum nobis laborum recusandae, esse consequatur vero et
+            voluptatem nam ut pariatur fuga repellendus ullam provident adipisci est aspernatur cupiditate. Perspiciatis
+            architecto fuga magnam maiores, distinctio eius. Explicabo vero quia tempore labore. Quidem, sit animi
+            libero temporibus, enim assumenda a saepe soluta explicabo dicta error voluptas provident voluptates
+            blanditiis ad tempore id tenetur veniam. Voluptatibus soluta blanditiis illum natus ipsam nisi amet
+            suscipit, delectus, laborum excepturi ab totam aperiam libero iusto repellat ut voluptas odit fuga est
+            explicabo sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis quo
+            pariatur dolorum labore voluptatum esse a cumque, totam sequi, tempore omnis, nihil voluptate obcaecati?
+            Impedit cupiditate amet mollitia velit sit incidunt! Repellat sed deleniti vero quaerat veritatis,
+            voluptatum itaque ipsum praesentium perspiciatis dolorum nam labore, sequi fuga suscipit possimus, quasi
+            reiciendis autem id ea animi explicabo eligendi. Odit aliquid sapiente eius, itaque dolorem quo. Maiores,
+            quos! Quo nesciunt, dolor ex neque unde rerum ipsum nam odit id voluptas culpa hic aliquid facilis magnam
+            consectetur quaerat repellendus commodi ducimus dignissimos tempora vitae quia expedita animi? Officiis
+            dignissimos incidunt consectetur corporis possimus. Mollitia, magni consequatur similique autem, libero et
+            debitis omnis quidem totam neque voluptate perspiciatis nam! Placeat totam laborum autem cum maxime possimus
+            dicta animi nulla temporibus aut vitae doloremque ratione, dolore natus tenetur dolor accusamus eaque?
+            Dolorem sed in deleniti laboriosam unde amet repudiandae laborum, beatae, distinctio cupiditate magni! 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequuntur adipisci dignissimos! Nam recusandae repellendus nesciunt dicta veniam accusamus. Nihil placeat doloremque beatae aspernatur totam nulla, ratione et saepe odio aperiam voluptate nobis quo consequuntur praesentium sapiente sint ab quis debitis rerum dolores recusandae, tenetur repellendus. Atque, quod pariatur quos eum asperiores eos laudantium officiis animi suscipit, eius provident repudiandae quo ratione labore debitis consequuntur harum incidunt, natus nihil. Sunt maxime, incidunt illo repellendus aperiam, ad laborum error obcaecati eius, placeat est corporis. Nobis, quasi ducimus molestias fugiat blanditiis, impedit doloribus mollitia soluta debitis modi dolore sint delectus. Nulla, minus? </p>
+    </main>
+    <footer>&copy; Copyright 2025 PCS</footer>
+</body>
+
+</html>
