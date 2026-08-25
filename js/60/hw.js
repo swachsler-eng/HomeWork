@@ -13,7 +13,7 @@ function trackDosage(medName, initialDosage) {
                 dose = newDosage;
                 console.log(`Dosage successfully adjusted to ${dose}mg of ${mName}`);
             } else {
-                throw new Error('Pin does not match or dose not valid')
+                throw new Error('Pin does not match or dose not valid');
             }
         }
     };
