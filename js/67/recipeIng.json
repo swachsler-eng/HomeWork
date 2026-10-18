@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Cookies",
+        "ingredients": ["flour", "sugar", "eggs", "butter", "vanilla extract"]
+    },
+    {
+        "id": 2,
+        "name": "Roast beef",
+        "ingredients": ["beef", "salt", "pepper", "garlic", "onion"]
+    },
+    {
+        "id": 3,
+        "name": "Chicken soup",
+        "ingredients": ["chicken", "salt", "pepper", "garlic", "onion"]
+    }
+]

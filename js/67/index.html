@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simchas Recipes</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #fdf6ec;
+            color: #333;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+        h1{
+            color: #8b3a1e;
+            text-align: center;
+            border-bottom: 2px solid #e0c9a6;
+            padding-bottom: 10px;
+        }
+        p{
+            text-align: center;
+            font-style: italic;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+ 
+        label{
+            display: block;
+            text-align: center;
+            margin-bottom: 8px;
+            color: #8b3a1e;
+        }
+        select{
+            display: block;
+            margin: 0 auto 24px;
+            font-family: inherit;
+            font-size: 16px;
+            padding: 8px 12px;
+            border: 1px solid #e0c9a6;
+            border-radius: 8px;
+            background-color: white;
+            cursor: pointer;
+        }
+        #recipeDisplay:not(:empty){
+            background-color: white;
+            border: 1px solid #e0c9a6;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(139, 58, 30, 0.1);
+        }
+        #recipeDisplay h2{
+            margin-top: 0;
+            text-align: center;
+            color: #8b3a1e;
+        }
+        #recipeDisplay img{
+            display: block;
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        #recipeDisplay p{
+            font-size: 17px;
+            line-height: 1.6;
+            margin: 16px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simchas Recipes</h1>
+    <p>Welcome to Simchas Recipes!</p>
+    <label for="recipes">Choose a recipe:</label>
+    <select name="recipes" id="recipes">
+        <option value="0">Select Recipe</option>
+    </select>
+    <div id="recipeDisplay"></div>
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="recipe.js" type="module"></script>
+</body>
+</html>
