@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif;
+    background: url('background.svg') center / cover no-repeat fixed;
+    user-select: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 48px;
+    color: #ff7a1a;
+    text-shadow: 3px 3px 0 #fff, 5px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* box that holds all the parts at the start */
+#tray {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border: 4px dashed #ff7a1a;
+    border-radius: 20px;
+}
+
+.potato-part {
+    cursor: grab;
+}
+
+.potato-part:active {
+    cursor: grabbing;
+}
+
+#music-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 18px;
+    font-family: inherit;
+    font-size: 18px;
+    color: #fff;
+    background: #ff7a1a;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 0 #c45a0c;
+    cursor: pointer;
+}
+
+#music-btn:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #c45a0c;
+}
