@@ -21,12 +21,18 @@ function PlaneC(color) {
     this.speed = 0;
 }
 
-PlaneC.prototype = Object.create(Vehicle);
+PlaneC.prototype = Object.create(Vehicle.prototype);
+
 const redPPlane = new PlaneC('red');
 console.log(redPPlane);
 PlaneC.prototype.constructor = PlaneC;
 console.log(redPPlane);
-
+redPPlane.Go(700);
+PlaneC.prototype.Go = function (e) {
+    console.log(`Now flying at ${e} MPH`);
+    this.speed = e;
+};
+redPPlane.Go(700);
 
 class Plane extends Vehicle{
     constructor(color) {

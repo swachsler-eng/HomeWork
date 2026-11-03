@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #controls {
+            position: absolute;
+            left: 500px;
+            top: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <canvas width="800" height="600" id="canvas"></canvas>
+    <div id="controls">
+        <label for="size">Size:</label>
+        <input type="range" id="size" min="10" max="150" value="50">
+        <label for="color">Color:</label>
+        <select id="color"></select>
+        <button id="btn">New Ball</button>
+    </div>
+
+    <script src="ball.js"></script>
+</body>
+
+</html>
