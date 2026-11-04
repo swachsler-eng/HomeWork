@@ -32,8 +32,8 @@ class Ball {
     constructor(radius, color) {
 
         this.rad = radius;
-        this.x = radius + 1;
-        this.y = radius + 1;
+        this.x = radius + 1 + (Math.random() * (window.innerWidth - 2 * (radius + 1)));
+        this.y = radius + 1 + (Math.random() * (window.innerHeight - 2 * (radius + 1)));;
         this.dx = 1;
         this.dy = 1;
         this.color = color;
