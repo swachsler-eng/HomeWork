@@ -40,6 +40,14 @@ class Ball {
     };
 
     Draw() {
+        if ((this.x > window.innerWidth - (this.rad + 1)) || this.x < (this.rad + 1)) {
+            this.dx = -this.dx;
+        }
+        if (this.y < (this.rad + 1) || this.y >= window.innerHeight - (this.rad + 1)) {
+            this.dy = -this.dy;
+        }
+        this.x += this.dx;
+        this.y += this.dy;
         ctx.beginPath();
         ctx.strokeStyle = this.color;
         ctx.arc(this.x, this.y, this.rad, 0, Math.PI * 2);
@@ -59,23 +67,26 @@ setInterval(() => {
     ctx.clearRect(0, 0, can.width, can.height);
 
     balls.forEach(ball => {
-        if ((ball.x > window.innerWidth - (ball.rad + 1)) || ball.x < (ball.rad + 1)) {
-            ball.dx = -ball.dx;
-        }
-        if (ball.y < (ball.rad + 1) || ball.y >= window.innerHeight - (ball.rad + 1)) {
-            ball.dy = -ball.dy;
-        }
-        ball.x += ball.dx;
-        ball.y += ball.dy;
+       
+        ball.Draw();
 
-        ctx.beginPath();
-        ctx.strokeStyle = `${ball.color}`;
-        ctx.arc(ball.x, ball.y, ball.rad, 0, Math.PI * 2);
-        ctx.stroke();
+        // if ((ball.x > window.innerWidth - (ball.rad + 1)) || ball.x < (ball.rad + 1)) {
+        //     ball.dx = -ball.dx;
+        // }
+        // if (ball.y < (ball.rad + 1) || ball.y >= window.innerHeight - (ball.rad + 1)) {
+        //     ball.dy = -ball.dy;
+        // }
+        // ball.x += ball.dx;
+        // ball.y += ball.dy;
+
+        // ctx.beginPath();
+        // ctx.strokeStyle = `${ball.color}`;
+        // ctx.arc(ball.x, ball.y, ball.rad, 0, Math.PI * 2);
+        // ctx.stroke();
 
 
     });
-}, 10);
+}, 5);
 
 // let x = rad+1;
 // let y = rad + 1;
