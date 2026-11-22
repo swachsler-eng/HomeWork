@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import NoCurrency from './noRecipe'
 export default function CurrencyConvertor() {
     const [cSymbols, setcSymbols] = useState([]);
     const [fromCurrency, setFromCurrency] = useState("");
@@ -23,15 +24,7 @@ export default function CurrencyConvertor() {
             })();
         }
         , [])
-
-    useEffect(
-        () => {
-            (async () => {
-                
-            }
-            )()
-        },[]
-    )
+    
     async function handleSubmit(e) {
         e.preventDefault();
         try {
@@ -50,6 +43,7 @@ export default function CurrencyConvertor() {
     }
     return (
         <>
+            {(!fromCurrency || !toCurrency)&&<NoCurrency/>}
             <form className="converter" onSubmit={handleSubmit}>
                 <select id="from" value={fromCurrency} onChange={e=>setFromCurrency(e.target.value)}>
                     <option hidden>Select a curency</option>
@@ -70,6 +64,7 @@ export default function CurrencyConvertor() {
 
                 <button type="submit" className="convert-btn" >Convert</button>
             </form>
+            
         </>
     )
 };
